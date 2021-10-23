@@ -1,15 +1,9 @@
 import { server } from "../config";
-import Head from "next/head";
 import ArticleList from "../components/ArticleList";
 
 const Home = ({ articles }) => {
   return (
     <div>
-      <Head>
-        <title>WebDev Newz</title>
-        <meta name="keywords" content="web development, programming" />
-      </Head>
-
       <ArticleList articles={articles}/>
     </div>
   );
